@@ -1,11 +1,12 @@
 import torch
 import torch.nn as nn
 from torch.nn import functional as F
-from nets.backbone import FPN
-from nets.transformer import Transformer
-from nets.regressor import Regressor
-from utils.mano import MANO
-from config import cfg
+
+from ..common.nets.backbone import FPN
+from ..common.nets.transformer import Transformer
+from ..common.nets.regressor import Regressor
+from ..common.utils.mano import MANO
+from .config import cfg
 import math
 
 class Model(nn.Module):

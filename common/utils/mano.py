@@ -1,5 +1,5 @@
 import numpy as np
-import constants
+import hpe.constants as constants
 from manopth.manolayer import ManoLayer
 
 
